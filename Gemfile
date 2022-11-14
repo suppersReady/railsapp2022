@@ -34,6 +34,9 @@ gem 'jquery-rails'
 #bild materialize css - sass
 gem 'materialize-sass', github: 'mkhairi/materialize-sass'
 
+#build devise
+gem 'devise'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 

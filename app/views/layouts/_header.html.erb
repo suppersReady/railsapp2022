@@ -5,15 +5,15 @@
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
 
-          <% if user_signed_in? %>
-            <li><%=link_to "Log Out", destroy_utenti_session_path, method: :delete %></li>
+          <% if utenti_signed_in? %>
+            <li><%=link_to "Log Out", destroy_utenti_session_path, method: :destroy %></li>
           <% else %>  
             <li><%=link_to "Log In", new_utenti_session_path %></li>
             <li><%=link_to "Registrazione", new_utenti_registration_path %></li>
           <% end %>
       </ul>
       <ul class="sidenav" id="mobile-demo">
-          <% if user_signed_in? %>
+          <% if utenti_signed_in? %>
             <li><%=link_to "Log Out", destroy_utenti_session_path, method: :delete %></li>
           <% else %>  
             <li><%=link_to "Log In", new_utenti_session_path %></li>

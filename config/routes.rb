@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :contents
   devise_for :utentis
-  devise_for :user
+
   root 'pages#home'
 
   get 'about' => 'pages#about'

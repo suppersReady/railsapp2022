@@ -18,15 +18,16 @@
 
   <div>
     <%= form.label :descrizione, style: "display: block" %>
-    <%= form.text_area :descrizione %>
+    <%= form.text_area :descrizione, class: "materialize-textarea" %>
   </div>
 
   <div>
-    <%= form.label :price, style: "display: block" %>
-    <%= form.text_field :price %>
+    <%= form.label :prezzo, style: "display: block" %>
+    <%= form.text_field :prezzo %>
   </div>
-
-  <div>
-    <%= form.submit %>
+  <br />
+  <div class="actions center">
+    <%= form.submit 'Salva contenuto', class: "btn" %>
   </div>
+  <br />
 <% end %>

@@ -37,6 +37,11 @@ gem 'materialize-sass', github: 'mkhairi/materialize-sass'
 #build devise
 gem 'devise'
 
+#paginazione
+gem 'will_paginate', '~> 3.3'
+#paginazione graficizzata con materialize
+gem 'will_paginate-materialize', git: 'https://github.com/mldoscar/will_paginate-materialize', branch: 'master'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 

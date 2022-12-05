@@ -2,7 +2,7 @@ class ContentsController < ApplicationController
   before_action :set_content, only: %i[ show edit update destroy ]
 
   def index
-    @contents = Content.all
+    @contents = Content.all.order("created_at DESC").paginate(page: params[:page], per_page: 1)
   end
 
   def show

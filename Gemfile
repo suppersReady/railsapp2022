@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+# seo - url parlanti
+gem 'friendly_id', '~> 5.4.0'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 
@@ -41,6 +44,10 @@ gem 'devise'
 gem 'will_paginate', '~> 3.3'
 #paginazione graficizzata con materialize
 gem 'will_paginate-materialize', git: 'https://github.com/mldoscar/will_paginate-materialize', branch: 'master'
+
+#per sviluppare in area test
+gem 'dotenv-rails', groups: [:development, :test]
+
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"

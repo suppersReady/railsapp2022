@@ -48,6 +48,11 @@ gem 'will_paginate-materialize', git: 'https://github.com/mldoscar/will_paginate
 #per sviluppare in area test
 gem 'dotenv-rails', groups: [:development, :test]
 
+#state machines (sicurezza transazioni)
+gem 'aasm'
+
+#imternational languages
+gem 'rails-i18n', '~> 7.0.0' # For 7.0.0
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
